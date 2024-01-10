@@ -1,0 +1,21 @@
+/* Body */
+
+@mixin body-background($image, $class: null) {
+  body.#{$class} {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-size: cover;
+    overflow: auto;
+    background-attachment: fixed;
+    
+    background-image: url("#{$image}");
+  }
+}
+
+@include body-background("../assets/media/gifinicio.gif", "index");
+@include body-background("../assets/media/descargas.png", "descargas");
+@include body-background("../assets/media/faq.jpg", "faq");
+@include body-background("../assets/media/vermas.jpg", "ver-mas");
+@include body-background("../assets/media/galeria.jpg", "galeria");

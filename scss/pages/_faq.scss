@@ -1,0 +1,41 @@
+/* FAQ */
+
+@import "../utilities/colors";
+
+.faq-container {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+
+  background-color: $MarronClaro;
+  border: 6px solid $MarronOscuro;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 1%;
+
+  .faq-question {
+    color: $MarronOscuro;
+    text-decoration: underline;
+  }
+
+  .faq-txt {
+    color: $Marron;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-right: 10rem;
+    margin-left: 10rem;
+
+    .faq-txt {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
